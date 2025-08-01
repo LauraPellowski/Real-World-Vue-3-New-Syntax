@@ -29,6 +29,26 @@
       "date": "July 22, 2022",
       "time": "11:00",
       "organizer": "Carey Wales"
+    },
+    {
+      "id": 001,
+      "category": "sustainability",
+      "title": "Path Clearing",
+      "description": "Help clear paths on local hiking trails.",
+      "location": "Playa Del Carmen",
+      "date": "July 31, 2025",
+      "time": "09:00",
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": 002,
+      "category": "fun",
+      "title": "Rock Painting",
+      "description": "Come paint some rocks to beautify the town.",
+      "location": "Playa Del Carmen",
+      "date": "August 22, 2025",
+      "time": "14:00",
+      "organizer": "Carey Wales"
     }
   ]
 }
