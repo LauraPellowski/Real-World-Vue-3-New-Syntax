@@ -16,7 +16,7 @@ const router = createRouter({
       props: route => ({ page: parseInt(route.query.page) || 1})
     },
     {
-      path: '/event/:id',
+      path: '/events/:id',
       name: 'event-layout',
       props: true,
       component: EventLayout,
@@ -39,7 +39,13 @@ const router = createRouter({
       ]
     },
     {
-      path: '/about',
+      path: '/event/:afterEvent(.*)',
+      redirect: to => {
+        return { path: '/events/' + to.params.afterEvent}
+      },
+    },
+    {
+      path: '/about-us',
       name: 'about',
       component: About,
       // // route level code-splitting
@@ -47,6 +53,10 @@ const router = createRouter({
       // // which is lazy-loaded when the route is visited.
       // component: () => import('../views/AboutView.vue')
     },
+    {
+      path: '/about',
+      redirect: { name: 'about'}
+    }
     // {
     //   path: "*",
     //   component: NotFoundComponent
